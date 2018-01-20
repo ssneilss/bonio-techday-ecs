@@ -10,7 +10,7 @@
 
 ### Example2 - 部署一個使用NGINX做反向代理的NodeJS Web Application
 
-### Example3 - 如何使用Jenkins ECS Slaves Plugin
+### Example3 - 如何使用Jenkins ECS Slaves Plugin增加CI/CD效率
 
 ## AWS ECS vs AWS Lambda
 
