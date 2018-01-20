@@ -13,8 +13,8 @@
 ### Example3 - 如何使用Jenkins ECS Slaves Plugin增加CI/CD效率
 
 ## AWS ECS vs AWS Lambda
-| --- | --- | --- |
 | Services | Lambda | ECS |
+| --- | --- | --- |
 | Languages Support | Node.js (JavaScript)、Python、Java (與 Java 8 相容) 和 C# (.NET Core) | 不限 |
 | Pricing | 每100ms為單位計費（不足則算100ms，通常較為便宜） | 以小時計費（同EC2，通常較為昂貴） |
 | Networking | 沒有Public IP、無法ssh | 有Public IP，可以ssh（同EC2） |
