@@ -15,6 +15,15 @@
 ## AWS ECS vs AWS Lambda
 
 ## AWS ECS Auto Scaling
-![image](https://user-images.githubusercontent.com/7845386/35181647-c984f948-fe00-11e7-90b6-042f2c10a31e.png)
+### ![image](https://user-images.githubusercontent.com/7845386/35181647-c984f948-fe00-11e7-90b6-042f2c10a31e.png)
+### Example4 - 錯誤示範：Cluster設定80%的Memory Utilization，t2 Large Instance，但每個Task的Memory Reservation為512MB...
+| # of Tasks  | # of Container Instances  | Reserved Memory before | Memory needed | Reserved Memory after | What happens |
+|---|---|---|---|---|---|
+| 0	| 1	| 0% (0 MB) |	512 MB | 25% (512 MB)	| Task is scheduled
+| 1	| 1	| 25% (512 MB) | 512 MB	| 50% (1024 MB) |	Task is scheduled
+| 2	| 1	| 50% (1024 MB) |	512 MB | 75% (1536 MB) | Task is scheduled
+| 3	| 1	| 75% (1536 MB) |	512 MB | | Task can’t be scheduled
+### Rule of Thumb
+`Threshold = (1 - max(Container Reservation) / Total Capacity of a Single Container Instance) * 100`
 
-### Example4 - Fácil的部署實例
+### Example5 - Fácil的部署實例
