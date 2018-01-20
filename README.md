@@ -3,7 +3,7 @@
 ### ECS Infrastructure
 ![image](https://user-images.githubusercontent.com/7845386/35181523-34e395bc-fdfe-11e7-8a79-3746717b7de8.png)
 
-### ECS Components
+### ECS Components - Image > Task > Service > Cluster
 ![image](https://user-images.githubusercontent.com/7845386/35181600-edd9cb94-fdff-11e7-8382-cb1dc4acdacc.png)
 
 ### Example1 - 部署一個NodeJS Web Application
